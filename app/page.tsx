@@ -8,7 +8,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-6">
       <h1 className="text-3xl font-bold uppercase">
-        {session ? "You are login" : "You not login"}
+        {session ? "You are logged in" : "You are not logged in"}
       </h1>
       {session ? <p className="text-lg">{session.user?.email}</p> : null}
       <IsLoginButton session={session} />
