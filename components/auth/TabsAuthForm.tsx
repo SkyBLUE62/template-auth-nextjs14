@@ -63,7 +63,7 @@ export function TabsAuthForm() {
         if (res?.ok) {
           toast.success("Login successful");
           router.push("/");
-          router.refresh;
+          router.refresh();
         } else {
           toast.error("Login failed");
         }
@@ -91,7 +91,7 @@ export function TabsAuthForm() {
       if (res?.error != "Configuration") {
         toast.success("Login successful");
         router.push("/");
-        router.refresh;
+        router.refresh();
       } else {
         toast.error("Email or password is incorrect");
       }
